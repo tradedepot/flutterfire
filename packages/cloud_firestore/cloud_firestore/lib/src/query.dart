@@ -377,7 +377,7 @@ class Query {
     }
 
     if (isEqualTo != null) addCondition(field, '==', isEqualTo);
-    if (isNotEqualTo != null) addCondition(field, '!=', isEqualTo);
+    if (isNotEqualTo != null) addCondition(field, '!=', isNotEqualTo);
     if (isLessThan != null) addCondition(field, '<', isLessThan);
     if (isLessThanOrEqualTo != null) {
       addCondition(field, '<=', isLessThanOrEqualTo);
