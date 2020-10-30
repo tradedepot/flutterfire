@@ -317,6 +317,8 @@ class FlutterFirebaseFirestoreMessageCodec extends StandardMessageCodec {
 
         if ("==".equals(operator)) {
           query = query.whereEqualTo(fieldPath, value);
+        } else if ("!=".equals(operator)) {
+          query = query.whereNotEqualTo(fieldPath, value);
         } else if ("<".equals(operator)) {
           query = query.whereLessThan(fieldPath, value);
         } else if ("<=".equals(operator)) {
